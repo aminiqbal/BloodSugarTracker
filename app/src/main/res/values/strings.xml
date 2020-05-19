@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">BloodSugarTracker</string>
+    <string name="app_name_modified">SUGAR LEVEL TRACKER</string>
+    <string name="bloodsugar_entry_title">CREATE A BLOOD GLUCOSE LEVEL ENTRY</string>
+
+    <string name="entry_date_text">Date of measurement:</string>
+    <string name="entry_time_text">Time of measurement:</string>
+    <string name="entry_input_text">Select your status during measurement:</string>
+    <string name="entry_fasting_text">Measurement taken while FASTING.</string>
+    <!--<string name="entry_beforemeal_text">Measurement taken BEFORE a meal.</string>
+    <string name="entry_aftermeal_text">Measurement taken SHORTLY AFTER a meal.</string>-->
+    <string name="entry_2hrsaftermeal_text">Measurement taken 2 HOURS AFTER a meal.</string>
+    <string name="entry_bloodglucose_text">Enter your blood glucose level:</string>
+
+    <string name="yes">Yes</string>
+    <string name="button_save_entry">SAVE ENTRY</string>
+
+</resources>

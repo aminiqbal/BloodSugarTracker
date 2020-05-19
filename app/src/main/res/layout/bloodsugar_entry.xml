@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_bloodsugar_entry"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/entry_date_text"/>
+
+            <DatePicker
+                android:id="@+id/date_entry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:datePickerMode="spinner"
+                android:calendarViewShown="false"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/entry_time_text"/>
+
+            <TimePicker
+                android:id="@+id/time_entry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:timePickerMode="spinner"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/entry_input_text"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/in_fasting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/entry_fasting_text"
+                    android:onClick="onSelected"/>
+
+                <!--<RadioButton
+                    android:id="@+id/in_before"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/entry_beforemeal_text"
+                    android:onClick="onSelected"/>-->
+
+                <!--<RadioButton
+                    android:id="@+id/in_after"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/entry_aftermeal_text"
+                    android:onClick="onSelected"/>-->
+
+                <RadioButton
+                    android:id="@+id/in_twosafter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/entry_2hrsaftermeal_text"
+                    android:onClick="onSelected"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/entry_bloodglucose_text"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/input_border">
+
+                <EditText
+                    android:id="@+id/blood_glucose_level_entry"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:gravity="center_vertical"
+                    android:background="@null"
+                    android:inputType="numberDecimal"
+                    android:lines="1"
+                    android:maxLength="4"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/save_entry"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/button_border"
+                android:text="@string/button_save_entry"
+                android:textColor="@color/whitetext"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="42dp"
+                style="?android:attr/borderlessButtonStyle"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
